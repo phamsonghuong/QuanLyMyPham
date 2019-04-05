@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbtnFemale = new System.Windows.Forms.RadioButton();
+            this.rbtnMale = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -39,59 +38,53 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnQuanTri = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.adress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pass = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtConfirmPass = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.dgvUser = new System.Windows.Forms.DataGridView();
             this.userid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // phone
+            // rbtnFemale
             // 
-            this.phone.DataPropertyName = "phone";
-            this.phone.HeaderText = "Số điện thoại";
-            this.phone.Name = "phone";
-            this.phone.Width = 90;
+            this.rbtnFemale.AutoSize = true;
+            this.rbtnFemale.Location = new System.Drawing.Point(180, 341);
+            this.rbtnFemale.Name = "rbtnFemale";
+            this.rbtnFemale.Size = new System.Drawing.Size(48, 22);
+            this.rbtnFemale.TabIndex = 3;
+            this.rbtnFemale.TabStop = true;
+            this.rbtnFemale.Text = "Nữ";
+            this.rbtnFemale.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbtnMale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(180, 341);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(48, 22);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(68, 341);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 22);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtnMale.AutoSize = true;
+            this.rbtnMale.Location = new System.Drawing.Point(68, 341);
+            this.rbtnMale.Name = "rbtnMale";
+            this.rbtnMale.Size = new System.Drawing.Size(61, 22);
+            this.rbtnMale.TabIndex = 2;
+            this.rbtnMale.TabStop = true;
+            this.rbtnMale.Text = "Nam";
+            this.rbtnMale.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -165,11 +158,11 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.btnQuanTri);
+            this.groupBox2.Controls.Add(this.btnThoat);
+            this.groupBox2.Controls.Add(this.btnHuy);
+            this.groupBox2.Controls.Add(this.btnXoa);
+            this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Location = new System.Drawing.Point(336, 550);
             this.groupBox2.Name = "groupBox2";
@@ -178,55 +171,60 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thanh chức năng";
             // 
-            // button5
+            // btnQuanTri
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.Menu;
-            this.button5.Location = new System.Drawing.Point(723, 44);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(105, 28);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Quản trị";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnQuanTri.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnQuanTri.Location = new System.Drawing.Point(723, 44);
+            this.btnQuanTri.Name = "btnQuanTri";
+            this.btnQuanTri.Size = new System.Drawing.Size(105, 28);
+            this.btnQuanTri.TabIndex = 8;
+            this.btnQuanTri.Text = "Quản trị";
+            this.btnQuanTri.UseVisualStyleBackColor = false;
+            this.btnQuanTri.Click += new System.EventHandler(this.btnQuanTri_Click);
             // 
-            // button3
+            // btnThoat
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Menu;
-            this.button3.Location = new System.Drawing.Point(582, 44);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 28);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Thoát";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnThoat.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnThoat.Location = new System.Drawing.Point(582, 44);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(105, 28);
+            this.btnThoat.TabIndex = 7;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // button1
+            // btnHuy
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Menu;
-            this.button1.Location = new System.Drawing.Point(439, 44);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 28);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Hủy";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnHuy.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnHuy.Location = new System.Drawing.Point(439, 44);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(105, 28);
+            this.btnHuy.TabIndex = 6;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
-            // button4
+            // btnXoa
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Menu;
-            this.button4.Location = new System.Drawing.Point(298, 44);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(105, 28);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Xóa";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnXoa.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnXoa.Location = new System.Drawing.Point(298, 44);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(105, 28);
+            this.btnXoa.TabIndex = 5;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button2
+            // btnSua
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Menu;
-            this.button2.Location = new System.Drawing.Point(154, 44);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 28);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSua.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnSua.Location = new System.Drawing.Point(154, 44);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(105, 28);
+            this.btnSua.TabIndex = 4;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -237,80 +235,74 @@
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // textBox3
+            // txtAddress
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(53, 476);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(211, 136);
-            this.textBox3.TabIndex = 0;
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(53, 476);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(211, 136);
+            this.txtAddress.TabIndex = 0;
             // 
-            // textBox2
+            // txtPhone
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(53, 404);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(211, 27);
-            this.textBox2.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(53, 271);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 27);
-            this.textBox1.TabIndex = 0;
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuantity.Location = new System.Drawing.Point(53, 196);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(211, 27);
-            this.txtQuantity.TabIndex = 0;
-            // 
-            // adress
-            // 
-            this.adress.DataPropertyName = "adress";
-            this.adress.HeaderText = "Địa chỉ";
-            this.adress.Name = "adress";
-            this.adress.Width = 150;
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(53, 124);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(211, 27);
-            this.txtPrice.TabIndex = 0;
+            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(53, 404);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(211, 27);
+            this.txtPhone.TabIndex = 0;
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(53, 53);
+            this.txtName.Location = new System.Drawing.Point(53, 271);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(211, 27);
             this.txtName.TabIndex = 0;
             // 
-            // name
+            // txtConfirmPass
             // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "Họ tên";
-            this.name.Name = "name";
+            this.txtConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPass.Location = new System.Drawing.Point(53, 196);
+            this.txtConfirmPass.Name = "txtConfirmPass";
+            this.txtConfirmPass.Size = new System.Drawing.Size(211, 27);
+            this.txtConfirmPass.TabIndex = 0;
             // 
-            // pass
+            // txtPass
             // 
-            this.pass.DataPropertyName = "pass";
-            this.pass.HeaderText = "Mật khẩu";
-            this.pass.Name = "pass";
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(53, 124);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(211, 27);
+            this.txtPass.TabIndex = 0;
             // 
-            // username
+            // txtUserName
             // 
-            this.username.DataPropertyName = "username";
-            this.username.HeaderText = "Tên đăng nhập";
-            this.username.Name = "username";
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(53, 53);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(211, 27);
+            this.txtUserName.TabIndex = 0;
+            // 
+            // dgvUser
+            // 
+            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.userid,
+            this.username,
+            this.password,
+            this.name,
+            this.gender,
+            this.phone,
+            this.address});
+            this.dgvUser.Location = new System.Drawing.Point(335, 23);
+            this.dgvUser.Name = "dgvUser";
+            this.dgvUser.RowTemplate.Height = 24;
+            this.dgvUser.Size = new System.Drawing.Size(864, 515);
+            this.dgvUser.TabIndex = 7;
+            this.dgvUser.DoubleClick += new System.EventHandler(this.dgvUser_DoubleClick);
             // 
             // userid
             // 
@@ -319,22 +311,23 @@
             this.userid.Name = "userid";
             this.userid.Width = 70;
             // 
-            // dataGridView1
+            // username
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.userid,
-            this.username,
-            this.pass,
-            this.name,
-            this.gender,
-            this.phone,
-            this.adress});
-            this.dataGridView1.Location = new System.Drawing.Point(335, 23);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(864, 515);
-            this.dataGridView1.TabIndex = 7;
+            this.username.DataPropertyName = "username";
+            this.username.HeaderText = "Tên đăng nhập";
+            this.username.Name = "username";
+            // 
+            // password
+            // 
+            this.password.DataPropertyName = "password";
+            this.password.HeaderText = "Mật khẩu";
+            this.password.Name = "password";
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "Họ tên";
+            this.name.Name = "name";
             // 
             // gender
             // 
@@ -343,10 +336,24 @@
             this.gender.Name = "gender";
             this.gender.Width = 70;
             // 
+            // phone
+            // 
+            this.phone.DataPropertyName = "phone";
+            this.phone.HeaderText = "Số điện thoại";
+            this.phone.Name = "phone";
+            this.phone.Width = 90;
+            // 
+            // address
+            // 
+            this.address.DataPropertyName = "address";
+            this.address.HeaderText = "Địa chỉ";
+            this.address.Name = "address";
+            this.address.Width = 150;
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rbtnFemale);
+            this.groupBox1.Controls.Add(this.rbtnMale);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
@@ -354,12 +361,12 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.txtQuantity);
-            this.groupBox1.Controls.Add(this.txtPrice);
+            this.groupBox1.Controls.Add(this.txtAddress);
+            this.groupBox1.Controls.Add(this.txtPhone);
             this.groupBox1.Controls.Add(this.txtName);
+            this.groupBox1.Controls.Add(this.txtConfirmPass);
+            this.groupBox1.Controls.Add(this.txtPass);
+            this.groupBox1.Controls.Add(this.txtUserName);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(21, 23);
             this.groupBox1.Name = "groupBox1";
@@ -375,12 +382,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1222, 666);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvUser);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmUser";
             this.Text = "Thành viên";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUser_FormClosed);
+            this.Load += new System.EventHandler(this.frmUser_Load);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -388,10 +397,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbtnFemale;
+        private System.Windows.Forms.RadioButton rbtnMale;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -400,25 +407,26 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnQuanTri;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox txtQuantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adress;
-        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pass;
-        private System.Windows.Forms.DataGridViewTextBoxColumn username;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userid;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gender;
+        private System.Windows.Forms.TextBox txtConfirmPass;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.DataGridView dgvUser;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn password;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn address;
     }
 }

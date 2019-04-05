@@ -48,6 +48,7 @@
             this.btnThoat.TabIndex = 12;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnNguoiDung
             // 
@@ -59,6 +60,7 @@
             this.btnNguoiDung.TabIndex = 6;
             this.btnNguoiDung.Text = "Người Dùng";
             this.btnNguoiDung.UseVisualStyleBackColor = false;
+            this.btnNguoiDung.Click += new System.EventHandler(this.btnNguoiDung_Click);
             // 
             // btnNCC
             // 
@@ -114,6 +116,7 @@
             this.btnDangXuat.TabIndex = 11;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // label1
             // 
@@ -142,6 +145,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmDashboard";
             this.Text = "Quản lý bán mỹ phẩm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmDashboard_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

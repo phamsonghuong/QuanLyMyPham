@@ -44,9 +44,10 @@
             this.btnThoat.Location = new System.Drawing.Point(342, 250);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(119, 37);
-            this.btnThoat.TabIndex = 8;
+            this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnDangNhap
             // 
@@ -55,9 +56,10 @@
             this.btnDangNhap.Location = new System.Drawing.Point(192, 250);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(119, 37);
-            this.btnDangNhap.TabIndex = 9;
+            this.btnDangNhap.TabIndex = 5;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // txtPass
             // 
@@ -67,7 +69,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(256, 29);
-            this.txtPass.TabIndex = 6;
+            this.txtPass.TabIndex = 1;
             // 
             // txtUser
             // 
@@ -76,7 +78,7 @@
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(256, 29);
-            this.txtUser.TabIndex = 7;
+            this.txtUser.TabIndex = 0;
             // 
             // label3
             // 
@@ -95,7 +97,7 @@
             this.label2.Location = new System.Drawing.Point(116, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 18);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Tên đăng nhập";
             // 
             // label1
@@ -106,7 +108,7 @@
             this.label1.Location = new System.Drawing.Point(209, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(236, 44);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 7;
             this.label1.Text = "Beauty Shop";
             // 
             // frmLogin
@@ -124,6 +126,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmLogin";
             this.Text = "Đăng nhập";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLogin_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

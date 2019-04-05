@@ -16,5 +16,29 @@ namespace QuanLyMyPham
         {
             InitializeComponent();
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            frmLogin Login = new frmLogin();
+            this.Hide();
+            Login.Show();
+        }
+
+        private void btnNguoiDung_Click(object sender, EventArgs e)
+        {
+            frmUser User = new frmUser();
+            this.Hide();
+            User.Show();
+        }
+
+        private void frmDashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

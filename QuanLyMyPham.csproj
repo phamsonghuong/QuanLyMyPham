@@ -90,6 +90,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLMyPhamDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMyPhamDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmBill.resx">
       <DependentUpon>frmBill.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +134,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QLMyPhamDataSet.xsc">
+      <DependentUpon>QLMyPhamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLMyPhamDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMyPhamDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMyPhamDataSet.xss">
+      <DependentUpon>QLMyPhamDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
