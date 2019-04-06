@@ -47,5 +47,26 @@ namespace QuanLyMyPham
             this.Hide();
             Product.Show();
         }
+
+        private void btnNCC_Click(object sender, EventArgs e)
+        {
+            frmSupplier Supplier = new frmSupplier();
+            this.Hide();
+            Supplier.Show();
+        }
+
+        private void btnTonKho_Click(object sender, EventArgs e)
+        {
+            frmInventory Inventory = new frmInventory();
+            this.Hide();
+            Inventory.Show();
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            frmBill Bill = new frmBill();
+            this.Hide();
+            Bill.Show();
+        }
     }
 }

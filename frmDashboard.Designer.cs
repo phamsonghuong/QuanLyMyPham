@@ -45,7 +45,7 @@
             this.btnThoat.Location = new System.Drawing.Point(618, 29);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(119, 37);
-            this.btnThoat.TabIndex = 12;
+            this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -54,10 +54,10 @@
             // 
             this.btnNguoiDung.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNguoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNguoiDung.Location = new System.Drawing.Point(322, 302);
+            this.btnNguoiDung.Location = new System.Drawing.Point(308, 302);
             this.btnNguoiDung.Name = "btnNguoiDung";
-            this.btnNguoiDung.Size = new System.Drawing.Size(119, 37);
-            this.btnNguoiDung.TabIndex = 6;
+            this.btnNguoiDung.Size = new System.Drawing.Size(151, 46);
+            this.btnNguoiDung.TabIndex = 4;
             this.btnNguoiDung.Text = "Người Dùng";
             this.btnNguoiDung.UseVisualStyleBackColor = false;
             this.btnNguoiDung.Click += new System.EventHandler(this.btnNguoiDung_Click);
@@ -66,43 +66,46 @@
             // 
             this.btnNCC.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNCC.Location = new System.Drawing.Point(322, 233);
+            this.btnNCC.Location = new System.Drawing.Point(308, 233);
             this.btnNCC.Name = "btnNCC";
-            this.btnNCC.Size = new System.Drawing.Size(119, 37);
-            this.btnNCC.TabIndex = 7;
+            this.btnNCC.Size = new System.Drawing.Size(151, 46);
+            this.btnNCC.TabIndex = 1;
             this.btnNCC.Text = "Nhà Cung Cấp";
             this.btnNCC.UseVisualStyleBackColor = false;
+            this.btnNCC.Click += new System.EventHandler(this.btnNCC_Click);
             // 
             // btnTonKho
             // 
             this.btnTonKho.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTonKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTonKho.Location = new System.Drawing.Point(519, 233);
+            this.btnTonKho.Location = new System.Drawing.Point(505, 233);
             this.btnTonKho.Name = "btnTonKho";
-            this.btnTonKho.Size = new System.Drawing.Size(119, 37);
-            this.btnTonKho.TabIndex = 8;
+            this.btnTonKho.Size = new System.Drawing.Size(151, 46);
+            this.btnTonKho.TabIndex = 2;
             this.btnTonKho.Text = "Tồn Kho";
             this.btnTonKho.UseVisualStyleBackColor = false;
+            this.btnTonKho.Click += new System.EventHandler(this.btnTonKho_Click);
             // 
             // btnHoaDon
             // 
             this.btnHoaDon.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoaDon.Location = new System.Drawing.Point(112, 302);
+            this.btnHoaDon.Location = new System.Drawing.Point(98, 302);
             this.btnHoaDon.Name = "btnHoaDon";
-            this.btnHoaDon.Size = new System.Drawing.Size(119, 37);
-            this.btnHoaDon.TabIndex = 9;
+            this.btnHoaDon.Size = new System.Drawing.Size(151, 46);
+            this.btnHoaDon.TabIndex = 3;
             this.btnHoaDon.Text = "Hóa Đơn";
             this.btnHoaDon.UseVisualStyleBackColor = false;
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // btnSanPham
             // 
             this.btnSanPham.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSanPham.Location = new System.Drawing.Point(112, 233);
+            this.btnSanPham.Location = new System.Drawing.Point(98, 233);
             this.btnSanPham.Name = "btnSanPham";
-            this.btnSanPham.Size = new System.Drawing.Size(119, 37);
-            this.btnSanPham.TabIndex = 10;
+            this.btnSanPham.Size = new System.Drawing.Size(151, 46);
+            this.btnSanPham.TabIndex = 0;
             this.btnSanPham.Text = "Sản Phẩm";
             this.btnSanPham.UseVisualStyleBackColor = false;
             this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
@@ -111,10 +114,10 @@
             // 
             this.btnDangXuat.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangXuat.Location = new System.Drawing.Point(519, 302);
+            this.btnDangXuat.Location = new System.Drawing.Point(505, 302);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(119, 37);
-            this.btnDangXuat.TabIndex = 11;
+            this.btnDangXuat.Size = new System.Drawing.Size(151, 46);
+            this.btnDangXuat.TabIndex = 5;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
@@ -127,7 +130,7 @@
             this.label1.Location = new System.Drawing.Point(143, 121);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(457, 51);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Beauty Shop Xin Chào";
             // 
             // frmDashboard
