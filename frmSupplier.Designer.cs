@@ -1,6 +1,6 @@
 ﻿namespace QuanLyMyPham
 {
-    partial class frmSuplier
+    partial class frmSupplier
     {
         /// <summary>
         /// Required designer variable.

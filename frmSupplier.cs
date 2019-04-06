@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyMyPham
 {
-    public partial class frmSuplier : Form
+    public partial class frmSupplier : Form
     {
-        public frmSuplier()
+        public frmSupplier()
         {
             InitializeComponent();
         }

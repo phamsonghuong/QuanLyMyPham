@@ -40,5 +40,12 @@ namespace QuanLyMyPham
         {
             Application.Exit();
         }
+
+        private void btnSanPham_Click(object sender, EventArgs e)
+        {
+            frmProduct Product = new frmProduct();
+            this.Hide();
+            Product.Show();
+        }
     }
 }

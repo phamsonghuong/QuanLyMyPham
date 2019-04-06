@@ -105,6 +105,7 @@
             this.btnSanPham.TabIndex = 10;
             this.btnSanPham.Text = "Sản Phẩm";
             this.btnSanPham.UseVisualStyleBackColor = false;
+            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
             // 
             // btnDangXuat
             // 
