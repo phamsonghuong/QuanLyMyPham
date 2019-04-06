@@ -126,6 +126,7 @@
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -136,6 +137,7 @@
             this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // label5
             // 
@@ -303,6 +305,7 @@
             this.dgvProduct.RowTemplate.Height = 24;
             this.dgvProduct.Size = new System.Drawing.Size(706, 540);
             this.dgvProduct.TabIndex = 4;
+            this.dgvProduct.DoubleClick += new System.EventHandler(this.dgvProduct_DoubleClick);
             // 
             // frmProduct
             // 
