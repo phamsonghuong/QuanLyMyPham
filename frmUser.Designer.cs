@@ -70,7 +70,7 @@
             this.rbtnFemale.Location = new System.Drawing.Point(180, 341);
             this.rbtnFemale.Name = "rbtnFemale";
             this.rbtnFemale.Size = new System.Drawing.Size(48, 22);
-            this.rbtnFemale.TabIndex = 3;
+            this.rbtnFemale.TabIndex = 5;
             this.rbtnFemale.TabStop = true;
             this.rbtnFemale.Text = "Nữ";
             this.rbtnFemale.UseVisualStyleBackColor = true;
@@ -81,7 +81,7 @@
             this.rbtnMale.Location = new System.Drawing.Point(68, 341);
             this.rbtnMale.Name = "rbtnMale";
             this.rbtnMale.Size = new System.Drawing.Size(61, 22);
-            this.rbtnMale.TabIndex = 2;
+            this.rbtnMale.TabIndex = 5;
             this.rbtnMale.TabStop = true;
             this.rbtnMale.Text = "Nam";
             this.rbtnMale.UseVisualStyleBackColor = true;
@@ -177,7 +177,7 @@
             this.btnQuanTri.Location = new System.Drawing.Point(723, 44);
             this.btnQuanTri.Name = "btnQuanTri";
             this.btnQuanTri.Size = new System.Drawing.Size(105, 28);
-            this.btnQuanTri.TabIndex = 8;
+            this.btnQuanTri.TabIndex = 13;
             this.btnQuanTri.Text = "Quản trị";
             this.btnQuanTri.UseVisualStyleBackColor = false;
             this.btnQuanTri.Click += new System.EventHandler(this.btnQuanTri_Click);
@@ -188,7 +188,7 @@
             this.btnThoat.Location = new System.Drawing.Point(582, 44);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(105, 28);
-            this.btnThoat.TabIndex = 7;
+            this.btnThoat.TabIndex = 12;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -199,7 +199,7 @@
             this.btnHuy.Location = new System.Drawing.Point(439, 44);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(105, 28);
-            this.btnHuy.TabIndex = 6;
+            this.btnHuy.TabIndex = 11;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
@@ -210,7 +210,7 @@
             this.btnXoa.Location = new System.Drawing.Point(298, 44);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(105, 28);
-            this.btnXoa.TabIndex = 5;
+            this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -221,7 +221,7 @@
             this.btnSua.Location = new System.Drawing.Point(154, 44);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(105, 28);
-            this.btnSua.TabIndex = 4;
+            this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -232,7 +232,7 @@
             this.btnThem.Location = new System.Drawing.Point(22, 44);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(105, 28);
-            this.btnThem.TabIndex = 3;
+            this.btnThem.TabIndex = 8;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -244,7 +244,7 @@
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(211, 136);
-            this.txtAddress.TabIndex = 0;
+            this.txtAddress.TabIndex = 7;
             // 
             // txtPhone
             // 
@@ -252,7 +252,7 @@
             this.txtPhone.Location = new System.Drawing.Point(53, 404);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(211, 27);
-            this.txtPhone.TabIndex = 0;
+            this.txtPhone.TabIndex = 6;
             // 
             // txtName
             // 
@@ -260,7 +260,7 @@
             this.txtName.Location = new System.Drawing.Point(53, 271);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(211, 27);
-            this.txtName.TabIndex = 0;
+            this.txtName.TabIndex = 4;
             // 
             // txtConfirmPass
             // 
@@ -268,7 +268,7 @@
             this.txtConfirmPass.Location = new System.Drawing.Point(53, 196);
             this.txtConfirmPass.Name = "txtConfirmPass";
             this.txtConfirmPass.Size = new System.Drawing.Size(211, 27);
-            this.txtConfirmPass.TabIndex = 0;
+            this.txtConfirmPass.TabIndex = 3;
             // 
             // txtPass
             // 
@@ -276,7 +276,7 @@
             this.txtPass.Location = new System.Drawing.Point(53, 124);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(211, 27);
-            this.txtPass.TabIndex = 0;
+            this.txtPass.TabIndex = 2;
             // 
             // txtUserName
             // 
@@ -284,7 +284,7 @@
             this.txtUserName.Location = new System.Drawing.Point(53, 53);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(211, 27);
-            this.txtUserName.TabIndex = 0;
+            this.txtUserName.TabIndex = 1;
             // 
             // dgvUser
             // 
