@@ -167,5 +167,34 @@ namespace QuanLyMyPham
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string Query = "Delete from tbl_bill where billid = @billid";
+                SqlCommand cmd = new SqlCommand(Query, conn);
+                cmd.Parameters.AddWithValue("@billid", i);
+
+                conn.Open();
+                int a = cmd.ExecuteNonQuery();
+                if (a > 0)
+                {
+                    MessageBox.Show("Đã xóa thành công");
+                    BindGridView();
+                    NullTextbox();
+                    btnThem.Enabled = true;
+                    btnSua.Enabled = false;
+                    btnXoa.Enabled = false;
+                    btnQuanTri.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Xóa không thành công");
+                }
+                conn.Close();
+
+            }
+        }
     }
 }
