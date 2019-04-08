@@ -159,5 +159,15 @@ namespace QuanLyMyPham
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void frmInventory_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
