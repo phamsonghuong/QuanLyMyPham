@@ -83,5 +83,15 @@ namespace QuanLyMyPham
             this.Hide();
             Dash.Show();
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void frmBill_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

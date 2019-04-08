@@ -176,5 +176,6 @@ namespace QuanLyMyPham
             this.Hide();
             Dash.Show();
         }
+
     }
 }

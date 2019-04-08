@@ -135,6 +135,7 @@
             this.btnThoat.TabIndex = 14;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnXoa
             // 
@@ -387,6 +388,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmBill";
             this.Text = "Hóa đơn";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmBill_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
