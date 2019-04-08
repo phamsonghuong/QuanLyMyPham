@@ -73,6 +73,7 @@
             this.dgvInventory.RowTemplate.Height = 24;
             this.dgvInventory.Size = new System.Drawing.Size(729, 597);
             this.dgvInventory.TabIndex = 9;
+            this.dgvInventory.DoubleClick += new System.EventHandler(this.dgvInventory_DoubleClick);
             // 
             // groupBox2
             // 
@@ -149,6 +150,7 @@
             this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // txtName
             // 
@@ -313,6 +315,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmInventory";
             this.Text = "Tồn kho";
+            this.Load += new System.EventHandler(this.frmInventory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
