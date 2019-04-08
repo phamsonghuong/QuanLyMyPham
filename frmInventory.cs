@@ -169,5 +169,12 @@ namespace QuanLyMyPham
         {
             Application.Exit();
         }
+
+        private void btnQuanTri_Click(object sender, EventArgs e)
+        {
+            frmDashboard Dash = new frmDashboard();
+            this.Hide();
+            Dash.Show();
+        }
     }
 }

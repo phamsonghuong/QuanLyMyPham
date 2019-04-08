@@ -96,7 +96,7 @@
             this.btnThem.Location = new System.Drawing.Point(21, 29);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(105, 28);
-            this.btnThem.TabIndex = 2;
+            this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -107,9 +107,10 @@
             this.btnQuanTri.Location = new System.Drawing.Point(176, 115);
             this.btnQuanTri.Name = "btnQuanTri";
             this.btnQuanTri.Size = new System.Drawing.Size(105, 28);
-            this.btnQuanTri.TabIndex = 2;
+            this.btnQuanTri.TabIndex = 10;
             this.btnQuanTri.Text = "Quản trị";
             this.btnQuanTri.UseVisualStyleBackColor = false;
+            this.btnQuanTri.Click += new System.EventHandler(this.btnQuanTri_Click);
             // 
             // btnHuy
             // 
@@ -117,7 +118,7 @@
             this.btnHuy.Location = new System.Drawing.Point(176, 29);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(105, 28);
-            this.btnHuy.TabIndex = 2;
+            this.btnHuy.TabIndex = 8;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
@@ -128,7 +129,7 @@
             this.btnThoat.Location = new System.Drawing.Point(176, 72);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(105, 28);
-            this.btnThoat.TabIndex = 2;
+            this.btnThoat.TabIndex = 9;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -139,7 +140,7 @@
             this.btnXoa.Location = new System.Drawing.Point(21, 115);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(105, 28);
-            this.btnXoa.TabIndex = 2;
+            this.btnXoa.TabIndex = 7;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -150,7 +151,7 @@
             this.btnSua.Location = new System.Drawing.Point(21, 72);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(105, 28);
-            this.btnSua.TabIndex = 2;
+            this.btnSua.TabIndex = 6;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -180,7 +181,7 @@
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(211, 115);
-            this.txtDescription.TabIndex = 0;
+            this.txtDescription.TabIndex = 4;
             // 
             // txtQuantity
             // 
@@ -188,7 +189,7 @@
             this.txtQuantity.Location = new System.Drawing.Point(53, 195);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(211, 27);
-            this.txtQuantity.TabIndex = 0;
+            this.txtQuantity.TabIndex = 2;
             // 
             // txtDate
             // 
@@ -196,7 +197,7 @@
             this.txtDate.Location = new System.Drawing.Point(53, 262);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(211, 24);
-            this.txtDate.TabIndex = 13;
+            this.txtDate.TabIndex = 3;
             // 
             // label4
             // 
@@ -244,7 +245,7 @@
             this.txtUnit.Location = new System.Drawing.Point(53, 123);
             this.txtUnit.Name = "txtUnit";
             this.txtUnit.Size = new System.Drawing.Size(211, 27);
-            this.txtUnit.TabIndex = 0;
+            this.txtUnit.TabIndex = 1;
             // 
             // groupBox1
             // 
