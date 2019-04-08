@@ -53,8 +53,8 @@
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.billid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,8 +70,8 @@
             this.dgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.billid,
-            this.date,
             this.username,
+            this.date,
             this.name,
             this.productname,
             this.price,
@@ -82,6 +82,7 @@
             this.dgvBill.RowTemplate.Height = 24;
             this.dgvBill.Size = new System.Drawing.Size(800, 530);
             this.dgvBill.TabIndex = 9;
+            this.dgvBill.DoubleClick += new System.EventHandler(this.dgvBill_DoubleClick);
             // 
             // btnTinh
             // 
@@ -157,6 +158,7 @@
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // groupBox2
             // 
@@ -332,18 +334,18 @@
             this.billid.Name = "billid";
             this.billid.Width = 70;
             // 
-            // date
-            // 
-            this.date.DataPropertyName = "date";
-            this.date.HeaderText = "Ngày lập";
-            this.date.Name = "date";
-            this.date.Width = 80;
-            // 
             // username
             // 
             this.username.DataPropertyName = "username";
             this.username.HeaderText = "Người lập";
             this.username.Name = "username";
+            this.username.Width = 80;
+            // 
+            // date
+            // 
+            this.date.DataPropertyName = "date";
+            this.date.HeaderText = "Ngày lập";
+            this.date.Name = "date";
             // 
             // name
             // 
@@ -390,6 +392,7 @@
             this.Name = "frmBill";
             this.Text = "Hóa đơn";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmBill_FormClosing);
+            this.Load += new System.EventHandler(this.frmBill_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -424,8 +427,8 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn billid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.DataGridViewTextBoxColumn username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn productname;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
