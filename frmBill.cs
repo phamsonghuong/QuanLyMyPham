@@ -76,5 +76,12 @@ namespace QuanLyMyPham
             int sum = Convert.ToInt32(txtPrice.Text) * Convert.ToInt32(txtQuantity.Text);
             txtTotal.Text = sum.ToString();
         }
+
+        private void btnQuanTri_Click(object sender, EventArgs e)
+        {
+            frmDashboard Dash = new frmDashboard();
+            this.Hide();
+            Dash.Show();
+        }
     }
 }

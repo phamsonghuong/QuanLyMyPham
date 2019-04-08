@@ -114,6 +114,7 @@
             this.btnQuanTri.TabIndex = 13;
             this.btnQuanTri.Text = "Quản trị";
             this.btnQuanTri.UseVisualStyleBackColor = false;
+            this.btnQuanTri.Click += new System.EventHandler(this.btnQuanTri_Click);
             // 
             // btnHuy
             // 
