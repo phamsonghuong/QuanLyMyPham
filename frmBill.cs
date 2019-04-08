@@ -93,5 +93,14 @@ namespace QuanLyMyPham
         {
             Application.Exit();
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            NullTextbox();
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+            btnThem.Enabled = true;
+            btnQuanTri.Enabled = true;
+        }
     }
 }
