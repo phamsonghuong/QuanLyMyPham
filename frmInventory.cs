@@ -152,5 +152,12 @@ namespace QuanLyMyPham
 
             }
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            NullTextbox();
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+        }
     }
 }
