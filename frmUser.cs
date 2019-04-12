@@ -59,7 +59,7 @@ namespace QuanLyMyPham
                 cmd.Parameters.AddWithValue("@address", txtAddress.Text.Trim());
 
                 conn.Open();
-                //MessageBox.Show(cmd);
+               
                 int a = cmd.ExecuteNonQuery();
                 if (a > 0)
                 {
@@ -218,5 +218,7 @@ namespace QuanLyMyPham
             this.Hide();
             Dash.Show();
         }
+
+       
     }
 }

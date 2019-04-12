@@ -318,7 +318,7 @@
             this.Controls.Add(this.dgvProduct);
             this.Name = "frmProduct";
             this.Text = "Sản phẩm";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frrmProduct_FormClosing);
+          //  this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frrmProduct_FormClosing);
             this.Load += new System.EventHandler(this.frmProduct_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

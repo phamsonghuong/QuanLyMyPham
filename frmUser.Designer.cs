@@ -386,6 +386,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmUser";
             this.Text = "Thành viên";
+            
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUser_FormClosed);
             this.Load += new System.EventHandler(this.frmUser_Load);
             this.groupBox2.ResumeLayout(false);
