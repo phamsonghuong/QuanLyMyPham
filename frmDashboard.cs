@@ -68,5 +68,11 @@ namespace QuanLyMyPham
             this.Hide();
             Bill.Show();
         }
+
+        private void frmDashboard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn thoát?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                e.Cancel = true;
+        }
     }
 }
