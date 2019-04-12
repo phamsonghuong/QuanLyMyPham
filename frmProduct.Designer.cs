@@ -60,6 +60,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.btnQuanTri);
             this.groupBox2.Controls.Add(this.btnHuy);
@@ -272,6 +273,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -292,6 +294,7 @@
             // 
             // dgvProduct
             // 
+            this.dgvProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -318,7 +321,6 @@
             this.Controls.Add(this.dgvProduct);
             this.Name = "frmProduct";
             this.Text = "Sản phẩm";
-          //  this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frrmProduct_FormClosing);
             this.Load += new System.EventHandler(this.frmProduct_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
