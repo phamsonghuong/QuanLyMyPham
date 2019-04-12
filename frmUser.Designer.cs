@@ -158,6 +158,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.btnQuanTri);
             this.groupBox2.Controls.Add(this.btnThoat);
             this.groupBox2.Controls.Add(this.btnHuy);
@@ -288,6 +289,7 @@
             // 
             // dgvUser
             // 
+            this.dgvUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.userid,
@@ -352,6 +354,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.rbtnFemale);
             this.groupBox1.Controls.Add(this.rbtnMale);
             this.groupBox1.Controls.Add(this.label7);
@@ -386,7 +389,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmUser";
             this.Text = "Thành viên";
-            
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUser_FormClosed);
             this.Load += new System.EventHandler(this.frmUser_Load);
             this.groupBox2.ResumeLayout(false);
