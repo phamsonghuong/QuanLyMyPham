@@ -36,6 +36,10 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.dgvSupplier = new System.Windows.Forms.DataGridView();
+            this.supplierid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,10 +47,6 @@
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.supplierid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -109,6 +109,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.btnQuanTri);
             this.groupBox2.Controls.Add(this.btnHuy);
@@ -135,6 +136,7 @@
             // 
             // dgvSupplier
             // 
+            this.dgvSupplier.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.supplierid,
@@ -147,6 +149,31 @@
             this.dgvSupplier.Size = new System.Drawing.Size(689, 402);
             this.dgvSupplier.TabIndex = 6;
             this.dgvSupplier.DoubleClick += new System.EventHandler(this.dgvSupplier_DoubleClick);
+            // 
+            // supplierid
+            // 
+            this.supplierid.DataPropertyName = "supplierid";
+            this.supplierid.HeaderText = "Mã nhà cung cấp";
+            this.supplierid.Name = "supplierid";
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "Tên nhà cung cấp";
+            this.name.Name = "name";
+            // 
+            // address
+            // 
+            this.address.DataPropertyName = "address";
+            this.address.HeaderText = "Địa chỉ";
+            this.address.Name = "address";
+            this.address.Width = 170;
+            // 
+            // phone
+            // 
+            this.phone.DataPropertyName = "phone";
+            this.phone.HeaderText = "Số điện thoại";
+            this.phone.Name = "phone";
             // 
             // label3
             // 
@@ -204,6 +231,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -217,31 +245,6 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thanh nhập dữ liệu";
-            // 
-            // supplierid
-            // 
-            this.supplierid.DataPropertyName = "supplierid";
-            this.supplierid.HeaderText = "Mã nhà cung cấp";
-            this.supplierid.Name = "supplierid";
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "Tên nhà cung cấp";
-            this.name.Name = "name";
-            // 
-            // address
-            // 
-            this.address.DataPropertyName = "address";
-            this.address.HeaderText = "Địa chỉ";
-            this.address.Name = "address";
-            this.address.Width = 170;
-            // 
-            // phone
-            // 
-            this.phone.DataPropertyName = "phone";
-            this.phone.HeaderText = "Số điện thoại";
-            this.phone.Name = "phone";
             // 
             // frmSupplier
             // 
