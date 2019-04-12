@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.dgvInventory = new System.Windows.Forms.DataGridView();
+            this.inventoryid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnQuanTri = new System.Windows.Forms.Button();
@@ -47,12 +53,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtUnit = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.inventoryid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -60,6 +60,7 @@
             // 
             // dgvInventory
             // 
+            this.dgvInventory.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.inventoryid,
@@ -75,8 +76,50 @@
             this.dgvInventory.TabIndex = 9;
             this.dgvInventory.DoubleClick += new System.EventHandler(this.dgvInventory_DoubleClick);
             // 
+            // inventoryid
+            // 
+            this.inventoryid.DataPropertyName = "inventoryid";
+            this.inventoryid.HeaderText = "Mã tồn kho";
+            this.inventoryid.Name = "inventoryid";
+            this.inventoryid.Width = 70;
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "Tên sản phẩm tồn kho";
+            this.name.Name = "name";
+            // 
+            // unit
+            // 
+            this.unit.DataPropertyName = "unit";
+            this.unit.HeaderText = "Đơn vị tính";
+            this.unit.Name = "unit";
+            this.unit.Width = 70;
+            // 
+            // quantity
+            // 
+            this.quantity.DataPropertyName = "quantity";
+            this.quantity.HeaderText = "Số lượng";
+            this.quantity.Name = "quantity";
+            this.quantity.Width = 80;
+            // 
+            // date
+            // 
+            this.date.DataPropertyName = "date";
+            this.date.HeaderText = "Ngày";
+            this.date.Name = "date";
+            this.date.Width = 70;
+            // 
+            // description
+            // 
+            this.description.DataPropertyName = "description";
+            this.description.HeaderText = "Mô tả";
+            this.description.Name = "description";
+            this.description.Width = 120;
+            // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.btnQuanTri);
             this.groupBox2.Controls.Add(this.btnHuy);
@@ -249,6 +292,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.txtDate);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
@@ -266,47 +310,6 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thanh nhập dữ liệu";
-            // 
-            // inventoryid
-            // 
-            this.inventoryid.DataPropertyName = "inventoryid";
-            this.inventoryid.HeaderText = "Mã tồn kho";
-            this.inventoryid.Name = "inventoryid";
-            this.inventoryid.Width = 70;
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "Tên sản phẩm tồn kho";
-            this.name.Name = "name";
-            // 
-            // unit
-            // 
-            this.unit.DataPropertyName = "unit";
-            this.unit.HeaderText = "Đơn vị tính";
-            this.unit.Name = "unit";
-            this.unit.Width = 70;
-            // 
-            // quantity
-            // 
-            this.quantity.DataPropertyName = "quantity";
-            this.quantity.HeaderText = "Số lượng";
-            this.quantity.Name = "quantity";
-            this.quantity.Width = 80;
-            // 
-            // date
-            // 
-            this.date.DataPropertyName = "date";
-            this.date.HeaderText = "Ngày";
-            this.date.Name = "date";
-            this.date.Width = 70;
-            // 
-            // description
-            // 
-            this.description.DataPropertyName = "description";
-            this.description.HeaderText = "Mô tả";
-            this.description.Name = "description";
-            this.description.Width = 120;
             // 
             // frmInventory
             // 
