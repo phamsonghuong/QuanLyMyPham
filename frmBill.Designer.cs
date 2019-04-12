@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             this.dgvBill = new System.Windows.Forms.DataGridView();
+            this.billid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTinh = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnQuanTri = new System.Windows.Forms.Button();
@@ -52,14 +60,6 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.billid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -67,6 +67,7 @@
             // 
             // dgvBill
             // 
+            this.dgvBill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.billid,
@@ -83,6 +84,59 @@
             this.dgvBill.Size = new System.Drawing.Size(800, 530);
             this.dgvBill.TabIndex = 9;
             this.dgvBill.DoubleClick += new System.EventHandler(this.dgvBill_DoubleClick);
+            // 
+            // billid
+            // 
+            this.billid.DataPropertyName = "billid";
+            this.billid.HeaderText = "Mã hóa đơn";
+            this.billid.Name = "billid";
+            this.billid.Width = 70;
+            // 
+            // username
+            // 
+            this.username.DataPropertyName = "username";
+            this.username.HeaderText = "Người lập";
+            this.username.Name = "username";
+            this.username.Width = 80;
+            // 
+            // date
+            // 
+            this.date.DataPropertyName = "date";
+            this.date.HeaderText = "Ngày lập";
+            this.date.Name = "date";
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "Tên cửa hàng";
+            this.name.Name = "name";
+            // 
+            // productname
+            // 
+            this.productname.DataPropertyName = "productname";
+            this.productname.HeaderText = "Tên sản phẩm";
+            this.productname.Name = "productname";
+            // 
+            // price
+            // 
+            this.price.DataPropertyName = "price";
+            this.price.HeaderText = "Giá";
+            this.price.Name = "price";
+            this.price.Width = 80;
+            // 
+            // quantity
+            // 
+            this.quantity.DataPropertyName = "quantity";
+            this.quantity.HeaderText = "Số lượng";
+            this.quantity.Name = "quantity";
+            this.quantity.Width = 50;
+            // 
+            // total
+            // 
+            this.total.DataPropertyName = "total";
+            this.total.HeaderText = "Thành tiền";
+            this.total.Name = "total";
+            this.total.Width = 90;
             // 
             // btnTinh
             // 
@@ -163,6 +217,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.btnTinh);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.btnQuanTri);
@@ -306,6 +361,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.txtDate);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -327,59 +383,6 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thanh nhập dữ liệu";
-            // 
-            // billid
-            // 
-            this.billid.DataPropertyName = "billid";
-            this.billid.HeaderText = "Mã hóa đơn";
-            this.billid.Name = "billid";
-            this.billid.Width = 70;
-            // 
-            // username
-            // 
-            this.username.DataPropertyName = "username";
-            this.username.HeaderText = "Người lập";
-            this.username.Name = "username";
-            this.username.Width = 80;
-            // 
-            // date
-            // 
-            this.date.DataPropertyName = "date";
-            this.date.HeaderText = "Ngày lập";
-            this.date.Name = "date";
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "Tên cửa hàng";
-            this.name.Name = "name";
-            // 
-            // productname
-            // 
-            this.productname.DataPropertyName = "productname";
-            this.productname.HeaderText = "Tên sản phẩm";
-            this.productname.Name = "productname";
-            // 
-            // price
-            // 
-            this.price.DataPropertyName = "price";
-            this.price.HeaderText = "Giá";
-            this.price.Name = "price";
-            this.price.Width = 80;
-            // 
-            // quantity
-            // 
-            this.quantity.DataPropertyName = "quantity";
-            this.quantity.HeaderText = "Số lượng";
-            this.quantity.Name = "quantity";
-            this.quantity.Width = 50;
-            // 
-            // total
-            // 
-            this.total.DataPropertyName = "total";
-            this.total.HeaderText = "Thành tiền";
-            this.total.Name = "total";
-            this.total.Width = 90;
             // 
             // frmBill
             // 
