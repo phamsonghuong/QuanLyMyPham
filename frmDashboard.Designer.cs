@@ -40,6 +40,7 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThoat.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Location = new System.Drawing.Point(618, 29);
@@ -52,6 +53,7 @@
             // 
             // btnNguoiDung
             // 
+            this.btnNguoiDung.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNguoiDung.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNguoiDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNguoiDung.Location = new System.Drawing.Point(308, 302);
@@ -64,6 +66,7 @@
             // 
             // btnNCC
             // 
+            this.btnNCC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNCC.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNCC.Location = new System.Drawing.Point(308, 233);
@@ -76,6 +79,7 @@
             // 
             // btnTonKho
             // 
+            this.btnTonKho.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnTonKho.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTonKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTonKho.Location = new System.Drawing.Point(505, 233);
@@ -88,6 +92,7 @@
             // 
             // btnHoaDon
             // 
+            this.btnHoaDon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnHoaDon.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoaDon.Location = new System.Drawing.Point(98, 302);
@@ -100,6 +105,7 @@
             // 
             // btnSanPham
             // 
+            this.btnSanPham.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSanPham.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.Location = new System.Drawing.Point(98, 233);
@@ -112,6 +118,7 @@
             // 
             // btnDangXuat
             // 
+            this.btnDangXuat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDangXuat.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat.Location = new System.Drawing.Point(505, 302);
@@ -124,6 +131,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
@@ -149,7 +157,6 @@
             this.Controls.Add(this.label1);
             this.Name = "frmDashboard";
             this.Text = "Quản lý bán mỹ phẩm";
-           // this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDashboard_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmDashboard_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
