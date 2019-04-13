@@ -92,7 +92,11 @@ namespace QuanLyMyPham
 
         private void frmBill_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Bạn muốn thoát?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            //Application.Exit();
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -195,6 +199,11 @@ namespace QuanLyMyPham
                 conn.Close();
 
             }
+        }
+
+        private void frmBill_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit();
         }
     }
 }

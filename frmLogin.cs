@@ -66,5 +66,7 @@ namespace QuanLyMyPham
             if (MessageBox.Show("Bạn muốn thoát?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                 e.Cancel = true;
         }
+
+        
     }
 }

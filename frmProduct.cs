@@ -172,9 +172,18 @@ namespace QuanLyMyPham
             }
         }
 
-        //private void frrmProduct_FormClosing(object sender, FormClosingEventArgs e)
-        //{
-        //    Application.Exit();
-        //}
+        private void frmProduct_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit();
+        }
+
+        private void frmProduct_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn thoát?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            //Application.Exit();
+        }
     }
 }

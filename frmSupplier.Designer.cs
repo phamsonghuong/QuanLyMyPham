@@ -258,6 +258,7 @@
             this.Name = "frmSupplier";
             this.Text = "Nhà cung cấp";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSupplier_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmSupplier_FormClosed);
             this.Load += new System.EventHandler(this.frmSupplier_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).EndInit();

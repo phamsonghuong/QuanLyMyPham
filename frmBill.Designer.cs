@@ -396,6 +396,7 @@
             this.Name = "frmBill";
             this.Text = "Hóa đơn";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmBill_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmBill_FormClosed);
             this.Load += new System.EventHandler(this.frmBill_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBill)).EndInit();
             this.groupBox2.ResumeLayout(false);
