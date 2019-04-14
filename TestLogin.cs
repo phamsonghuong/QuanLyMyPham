@@ -21,25 +21,6 @@ namespace QuanLyMyPham
             }
             else return "1";
 
-
-
-            //if ((user == "") && (pass ==""))
-            //{
-            //    return ("1");
-            //}
-            //else
-            //if (user == "" || pass == "")
-            //{
-            //    return ("2");
-            //}
-            //else
-            //if (user != u || pass != p)
-            //{
-            //    return ("3");
-            //}
-
-            //else return "0";
-
         }
     }
 }
