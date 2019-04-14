@@ -185,5 +185,47 @@ namespace QuanLyMyPham
             }
             //Application.Exit();
         }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+
+                //"SELECT * FROM MONHOC WHERE name LIKE N'%" + name + "%'", conn);
+
+                string Query = "SELECT * FROM tbl_product WHERE 1 = 1";
+                SqlCommand cmd = new SqlCommand(Query, conn);
+                cmd.Parameters.AddWithValue("@name", txtTim.Text.Trim());
+
+
+                if (txtTim.Text != "")
+                {
+                    Query += " AND @name LIKE N'%"+ txtTim.Text +"%'";
+                }
+
+
+                conn.Open();
+
+                string a = txtTim.Text;
+                if ( a == "@name")
+                {
+                    MessageBox.Show("Tìm thấy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    BindGridView();
+                    NullTextbox();
+
+                    btnThem.Enabled = true;
+                    btnSua.Enabled = false;
+                    btnXoa.Enabled = false;
+                    btnQuanTri.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                conn.Close();
+
+            }
+        }
     }
 }
