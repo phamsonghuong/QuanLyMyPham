@@ -47,15 +47,15 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
-            this.btnTim = new System.Windows.Forms.Button();
-            this.txtTim = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnTim = new System.Windows.Forms.Button();
+            this.txtTim = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
@@ -272,38 +272,6 @@
             this.dgvProduct.TabIndex = 4;
             this.dgvProduct.DoubleClick += new System.EventHandler(this.dgvProduct_DoubleClick);
             // 
-            // btnTim
-            // 
-            this.btnTim.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnTim.BackColor = System.Drawing.SystemColors.Menu;
-            this.btnTim.Location = new System.Drawing.Point(377, 595);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(99, 30);
-            this.btnTim.TabIndex = 7;
-            this.btnTim.Text = "Tìm Kiếm";
-            this.btnTim.UseVisualStyleBackColor = false;
-            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
-            // 
-            // txtTim
-            // 
-            this.txtTim.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTim.Location = new System.Drawing.Point(377, 554);
-            this.txtTim.Multiline = true;
-            this.txtTim.Name = "txtTim";
-            this.txtTim.Size = new System.Drawing.Size(376, 27);
-            this.txtTim.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(373, 519);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(214, 20);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Nhập tên sản phẩm cần tìm";
-            // 
             // Column1
             // 
             this.Column1.DataPropertyName = "productid";
@@ -346,6 +314,38 @@
             this.Column6.Name = "Column6";
             this.Column6.Width = 150;
             // 
+            // btnTim
+            // 
+            this.btnTim.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnTim.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnTim.Location = new System.Drawing.Point(377, 595);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(99, 30);
+            this.btnTim.TabIndex = 7;
+            this.btnTim.Text = "Tìm Kiếm";
+            this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+            // 
+            // txtTim
+            // 
+            this.txtTim.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTim.Location = new System.Drawing.Point(377, 554);
+            this.txtTim.Multiline = true;
+            this.txtTim.Name = "txtTim";
+            this.txtTim.Size = new System.Drawing.Size(376, 27);
+            this.txtTim.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(373, 519);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(214, 20);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Nhập tên sản phẩm cần tìm";
+            // 
             // frmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -359,6 +359,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvProduct);
             this.Name = "frmProduct";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sản phẩm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProduct_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmProduct_FormClosed);
