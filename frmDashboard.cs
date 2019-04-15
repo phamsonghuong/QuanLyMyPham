@@ -79,6 +79,5 @@ namespace QuanLyMyPham
             // Application.Exit();
         }
 
-        
     }
 }

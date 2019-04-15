@@ -156,6 +156,7 @@
             this.Controls.Add(this.btnDangXuat);
             this.Controls.Add(this.label1);
             this.Name = "frmDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý bán mỹ phẩm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDashboard_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmDashboard_FormClosed);
