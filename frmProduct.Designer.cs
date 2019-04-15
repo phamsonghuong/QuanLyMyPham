@@ -40,22 +40,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSupplierName = new System.Windows.Forms.TextBox();
             this.txtUnit = new System.Windows.Forms.TextBox();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
             this.btnTim = new System.Windows.Forms.Button();
             this.txtTim = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
@@ -70,7 +70,7 @@
             this.groupBox2.Controls.Add(this.btnThoat);
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnSua);
-            this.groupBox2.Location = new System.Drawing.Point(9, 430);
+            this.groupBox2.Location = new System.Drawing.Point(36, 481);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(307, 155);
             this.groupBox2.TabIndex = 6;
@@ -193,13 +193,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Tên sản phẩm";
             // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "suppliername";
-            this.Column6.HeaderText = "Nhà cung cấp";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 150;
-            // 
             // txtSupplierName
             // 
             this.txtSupplierName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -240,40 +233,6 @@
             this.txtName.Size = new System.Drawing.Size(211, 27);
             this.txtName.TabIndex = 0;
             // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "unit";
-            this.Column5.HeaderText = "Đơn vị tính";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 70;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "quantity";
-            this.Column4.HeaderText = "Số lượng";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 50;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "price";
-            this.Column3.HeaderText = "Giá";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 70;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "name";
-            this.Column2.HeaderText = "Tên sản phẩm";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "productid";
-            this.Column1.HeaderText = "Mã sản phẩm";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 50;
-            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -288,7 +247,7 @@
             this.groupBox1.Controls.Add(this.txtPrice);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(9, 22);
+            this.groupBox1.Location = new System.Drawing.Point(35, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(308, 402);
             this.groupBox1.TabIndex = 5;
@@ -306,10 +265,10 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dgvProduct.Location = new System.Drawing.Point(340, 22);
+            this.dgvProduct.Location = new System.Drawing.Point(377, 51);
             this.dgvProduct.Name = "dgvProduct";
             this.dgvProduct.RowTemplate.Height = 24;
-            this.dgvProduct.Size = new System.Drawing.Size(712, 437);
+            this.dgvProduct.Size = new System.Drawing.Size(860, 437);
             this.dgvProduct.TabIndex = 4;
             this.dgvProduct.DoubleClick += new System.EventHandler(this.dgvProduct_DoubleClick);
             // 
@@ -317,7 +276,7 @@
             // 
             this.btnTim.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnTim.BackColor = System.Drawing.SystemColors.Menu;
-            this.btnTim.Location = new System.Drawing.Point(340, 545);
+            this.btnTim.Location = new System.Drawing.Point(377, 595);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(99, 30);
             this.btnTim.TabIndex = 7;
@@ -328,7 +287,7 @@
             // txtTim
             // 
             this.txtTim.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTim.Location = new System.Drawing.Point(340, 504);
+            this.txtTim.Location = new System.Drawing.Point(377, 554);
             this.txtTim.Multiline = true;
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(376, 27);
@@ -339,18 +298,60 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(336, 481);
+            this.label6.Location = new System.Drawing.Point(373, 519);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(214, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "Nhập tên sản phẩm cần tìm";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "productid";
+            this.Column1.HeaderText = "Mã sản phẩm";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "name";
+            this.Column2.HeaderText = "Tên sản phẩm";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "price";
+            this.Column3.HeaderText = "Giá";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 90;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "quantity";
+            this.Column4.HeaderText = "Số lượng";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 70;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "unit";
+            this.Column5.HeaderText = "Đơn vị tính";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 70;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "suppliername";
+            this.Column6.HeaderText = "Nhà cung cấp";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 150;
             // 
             // frmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1085, 612);
+            this.ClientSize = new System.Drawing.Size(1282, 694);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtTim);
             this.Controls.Add(this.btnTim);
@@ -385,21 +386,21 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.TextBox txtSupplierName;
         private System.Windows.Forms.TextBox txtUnit;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvProduct;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.TextBox txtTim;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
