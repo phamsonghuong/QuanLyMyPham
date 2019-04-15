@@ -100,6 +100,7 @@
     <Compile Include="TestLogin.cs" />
     <Compile Include="TestProduct.cs" />
     <Compile Include="TestSupplier.cs" />
+    <Compile Include="TestUser.cs" />
     <EmbeddedResource Include="frmBill.resx">
       <DependentUpon>frmBill.cs</DependentUpon>
     </EmbeddedResource>
