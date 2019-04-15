@@ -9,6 +9,7 @@ namespace QuanLyMyPham
 {
     public class TestUser
     {
+        //Lỗi (không xử lý được radioButton
         /* public static string ktThemUser(string username, string password,string confirm, string name, string gender, int phone, string address)
          {
              string connectionString = @"Data Source=DESKTOP-BV4LABJ\SQLEXPRESS;Initial Catalog=QLMyPham;Integrated Security=True";
