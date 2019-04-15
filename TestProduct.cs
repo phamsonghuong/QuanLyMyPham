@@ -9,7 +9,7 @@ namespace QuanLyMyPham
 {
     public class TestProduct
     {
-        public static string ktSanpham(string name, double price, int quantity, string unit, string suppliername)
+        public static string ktThemSanpham(string name, double price, int quantity, string unit, string suppliername)
         {
             string connectionString = @"Data Source=DESKTOP-BV4LABJ\SQLEXPRESS;Initial Catalog=QLMyPham;Integrated Security=True";
 
