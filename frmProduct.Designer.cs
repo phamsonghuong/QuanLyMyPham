@@ -247,7 +247,7 @@
             this.groupBox1.Controls.Add(this.txtPrice);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(35, 41);
+            this.groupBox1.Location = new System.Drawing.Point(35, 51);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(308, 402);
             this.groupBox1.TabIndex = 5;

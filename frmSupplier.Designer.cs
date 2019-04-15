@@ -116,7 +116,7 @@
             this.groupBox2.Controls.Add(this.btnThoat);
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnSua);
-            this.groupBox2.Location = new System.Drawing.Point(28, 282);
+            this.groupBox2.Location = new System.Drawing.Point(44, 354);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(307, 155);
             this.groupBox2.TabIndex = 7;
@@ -143,10 +143,10 @@
             this.name,
             this.address,
             this.phone});
-            this.dgvSupplier.Location = new System.Drawing.Point(341, 24);
+            this.dgvSupplier.Location = new System.Drawing.Point(373, 49);
             this.dgvSupplier.Name = "dgvSupplier";
             this.dgvSupplier.RowTemplate.Height = 24;
-            this.dgvSupplier.Size = new System.Drawing.Size(689, 402);
+            this.dgvSupplier.Size = new System.Drawing.Size(689, 448);
             this.dgvSupplier.TabIndex = 6;
             this.dgvSupplier.DoubleClick += new System.EventHandler(this.dgvSupplier_DoubleClick);
             // 
@@ -155,6 +155,7 @@
             this.supplierid.DataPropertyName = "supplierid";
             this.supplierid.HeaderText = "Mã nhà cung cấp";
             this.supplierid.Name = "supplierid";
+            this.supplierid.Width = 80;
             // 
             // name
             // 
@@ -179,7 +180,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 175);
+            this.label3.Location = new System.Drawing.Point(18, 188);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 18);
             this.label3.TabIndex = 1;
@@ -189,7 +190,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 103);
+            this.label2.Location = new System.Drawing.Point(18, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 18);
             this.label2.TabIndex = 1;
@@ -199,7 +200,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 32);
+            this.label1.Location = new System.Drawing.Point(18, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 18);
             this.label1.TabIndex = 1;
@@ -208,7 +209,7 @@
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(53, 196);
+            this.txtPhone.Location = new System.Drawing.Point(47, 209);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(211, 27);
             this.txtPhone.TabIndex = 2;
@@ -216,7 +217,7 @@
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(53, 124);
+            this.txtAddress.Location = new System.Drawing.Point(47, 137);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(211, 27);
             this.txtAddress.TabIndex = 1;
@@ -224,7 +225,7 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(53, 53);
+            this.txtName.Location = new System.Drawing.Point(47, 66);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(211, 27);
             this.txtName.TabIndex = 0;
@@ -239,9 +240,9 @@
             this.groupBox1.Controls.Add(this.txtAddress);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(26, 24);
+            this.groupBox1.Location = new System.Drawing.Point(44, 59);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(308, 252);
+            this.groupBox1.Size = new System.Drawing.Size(308, 266);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thanh nhập dữ liệu";
@@ -251,7 +252,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1053, 450);
+            this.ClientSize = new System.Drawing.Size(1119, 553);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dgvSupplier);
             this.Controls.Add(this.groupBox1);
